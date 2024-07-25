@@ -13,3 +13,5 @@ rm copilot.vsix
 
 code-server --install-extension copilot-chat.vsix
 rm copilot-chat.vsix
+
+code-server --install-extension oderwat.indent-rainbow
