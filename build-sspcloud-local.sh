@@ -34,4 +34,6 @@ nvm use 16
 yarn
 
 # Start the project
-yarn start
+yarn build
+cd build
+python -m http.server 5000 --bind 0.0.0.0
