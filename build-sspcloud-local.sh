@@ -9,13 +9,13 @@ export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || pr
 nvm --version
 
 # Install Node.js version 16
-nvm install 16
+nvm install 20
 
 # Use Node.js version 16
-nvm use 16
+nvm use 20
 
 # Set Node.js version 16 as default
-nvm alias default 16
+nvm alias default 20
 
 # Verify Node.js and npm installation
 node --version
@@ -28,7 +28,7 @@ npm install -g yarn
 yarn --version
 
 # Use Node.js version 16
-nvm use 16
+nvm use 20
 
 # Install project dependencies with Yarn
 yarn
@@ -37,3 +37,6 @@ yarn
 yarn build
 cd build
 python -m http.server 5000 --bind 0.0.0.0
+
+# if run storybook
+# npm run storybook
