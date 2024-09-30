@@ -38,7 +38,7 @@ yarn
 
 # Start the project
 yarn build
-cd build
+cd public
 python -m http.server 5000 --bind 0.0.0.0
 
 # if run storybook
