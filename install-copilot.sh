@@ -15,8 +15,8 @@ code-server --install-extension ms-python.mypy-type-checker
 
 # COPILOT ------------------------------------------------
 
-copilotVersion="1.234.0"
-copilotChatVersion="0.20.0" # This version is not compatible with VSCode server 1.92.2
+copilotVersion="1.254.1278"
+copilotChatVersion="0.24.2024122001"
 
 wget --retry-on-http-error=429 https://marketplace.visualstudio.com/_apis/public/gallery/publishers/GitHub/vsextensions/copilot/${copilotVersion}/vspackage -O copilot.vsix.gz
 wget --retry-on-http-error=429 https://marketplace.visualstudio.com/_apis/public/gallery/publishers/GitHub/vsextensions/copilot-chat/${copilotChatVersion}/vspackage -O copilot-chat.vsix.gz
