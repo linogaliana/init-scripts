@@ -5,6 +5,14 @@
 code-server --install-extension oderwat.indent-rainbow
 code-server --install-extension pomdtr.excalidraw-editor
 
+# Replace default flake8 linter with project-preconfigured ruff
+code-server --uninstall-extension ms-python.flake8
+code-server --install-extension charliermarsh.ruff
+
+# Install type checking extension
+code-server --install-extension ms-python.mypy-type-checker
+
+
 # COPILOT ------------------------------------------------
 
 copilotVersion="1.234.0"
