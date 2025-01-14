@@ -5,6 +5,7 @@
 code-server --install-extension oderwat.indent-rainbow
 code-server --install-extension pomdtr.excalidraw-editor
 code-server --install-extension tamasfe.even-better-toml
+code-server --install-extension aaron-bond.better-comments
 
 
 # Replace default flake8 linter with project-preconfigured ruff
