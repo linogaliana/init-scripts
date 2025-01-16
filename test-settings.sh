@@ -1,3 +1,5 @@
+#!/bin/bash
+
 SETTINGS_FILE="${HOME}/.local/share/code-server/User/settings.json"
 
 # Check if the settings.json file exists, otherwise create a new one
