@@ -23,5 +23,26 @@ jq '. + {
 
     "flake8.args": [
         "--max-line-length=100"  # Max line length for Python linting
-    ]
+    ],
+
+    // Editor settings
+    "ruff.importStrategy": "useBundled",
+    "editor.defaultFormatter": "charliermarsh.ruff",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveMode": "file",
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "always",
+        "source.fixAll": "always"
+    },
+    "files.autoSave": "onFocusChange",
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+
+    "workbench.sideBar.location": "right"
+
 }' "$SETTINGS_FILE" > "$SETTINGS_FILE.tmp" && mv "$SETTINGS_FILE.tmp" "$SETTINGS_FILE"
