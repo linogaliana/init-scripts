@@ -75,3 +75,21 @@ echo "Running nbstripout --install..."
 nbstripout --install
 
 echo "Personal init done."
+
+# VSCODE PERSONAL SETTINGS -----------------------
+
+jq '. + {
+    "workbench.colorTheme": "Default Light Modern",  # Set the theme
+
+    "editor.rulers": [80, 100, 120],  # Add specific vertical rulers
+    "files.trimTrailingWhitespace": true,  # Automatically trim trailing whitespace
+    "files.insertFinalNewline": true,  # Ensure files end with a newline
+
+    "flake8.args": [
+        "--max-line-length=100"  # Max line length for Python linting
+    ]
+
+
+    
+}' "$SETTINGS_FILE" > "$SETTINGS_FILE.tmp" && mv "$SETTINGS_FILE.tmp" "$SETTINGS_FILE"
+
