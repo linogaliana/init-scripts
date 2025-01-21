@@ -79,7 +79,7 @@ echo "Personal init done."
 # VSCODE PERSONAL SETTINGS -----------------------
 
 jq '. + {
-    "workbench.colorTheme": "Default Light Modern",  # Set the theme
+    "workbench.colorTheme": "Default Dark Modern",  # Set the theme
 
     "editor.rulers": [80, 100, 120],  # Add specific vertical rulers
     "files.trimTrailingWhitespace": true,  # Automatically trim trailing whitespace
