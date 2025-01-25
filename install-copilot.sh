@@ -2,6 +2,7 @@
 
 # CONFORT EXTENSIONS ------------------------------------
 
+code-server --install-extension yzhang.markdown-all-in-one
 code-server --install-extension oderwat.indent-rainbow
 code-server --install-extension pomdtr.excalidraw-editor
 code-server --install-extension tamasfe.even-better-toml
