@@ -13,8 +13,8 @@ code-server --install-extension github.vscode-github-actions
 code-server --uninstall-extension ms-python.flake8
 code-server --install-extension charliermarsh.ruff
 
-# Install type checking extension
-code-server --install-extension ms-python.mypy-type-checker
+# Continue extension
+code-server --install-extension continue.continue
 
 
 # COPILOT ------------------------------------------------
