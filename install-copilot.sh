@@ -16,12 +16,12 @@ code-server --uninstall-extension ms-python.flake8
 code-server --install-extension charliermarsh.ruff
 
 # Continue extension
-code-server --install-extension continue.continue
+# code-server --install-extension continue.continue
 
 # COPILOT ------------------------------------------------
 
-copilotVersion="1.254.1278"
-copilotChatVersion="0.24.2024122001"
+copilotVersion="1.270.0"
+copilotChatVersion="0.23.0"
 
 wget --retry-on-http-error=429 https://marketplace.visualstudio.com/_apis/public/gallery/publishers/GitHub/vsextensions/copilot/${copilotVersion}/vspackage -O copilot.vsix.gz
 wget --retry-on-http-error=429 https://marketplace.visualstudio.com/_apis/public/gallery/publishers/GitHub/vsextensions/copilot-chat/${copilotChatVersion}/vspackage -O copilot-chat.vsix.gz
