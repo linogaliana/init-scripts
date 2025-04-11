@@ -34,6 +34,23 @@ code-server --install-extension copilot-chat.vsix
 rm copilot.vsix copilot-chat.vsix
 
 
+# STARSHIP COMMAND LINE ------------------------------------------
+
+curl -sS https://starship.rs/install.sh | sudo sh -s -- -y
+echo eval "$(starship init bash)" >> ~/.bashrc
+
+
+mkdir -p ~/.config
+
+echo "
+[aws]
+disabled = true
+
+[container]
+disabled = true
+" >> ~/.config/starship.toml
+
+
 # VSCODE PARAMETERS -------------------------------------
 
 # Define the configuration directory for VS Code
