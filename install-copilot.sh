@@ -99,9 +99,7 @@ echo "Personal init done."
 
 jq '. + {
     "workbench.colorTheme": "Default Dark Modern",  # Set the theme
-
-	"workbench.editor.wrapTabs": true,
-
+    "workbench.editor.wrapTabs": true,
 
     "editor.rulers": [80, 100, 120],  # Add specific vertical rulers
     "files.trimTrailingWhitespace": true,  # Automatically trim trailing whitespace
