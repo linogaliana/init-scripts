@@ -65,6 +65,7 @@ SETTINGS_FILE="$VSCODE_CONFIG_DIR/settings.json"
 # Enable dark mode by default
 echo '{
     "workbench.colorTheme": "Default Dark Modern"
+    "workbench.editor.wrapTabs": true
 }' > "$SETTINGS_FILE"
 
 # Keybindings file
@@ -80,7 +81,24 @@ echo '[
         "key": "ctrl+d",
         "command": "editor.action.deleteLines",
         "when": "editorTextFocus"
-    }
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+alt+right",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+w",
+        "command": "workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "expandLineSelection",
+        "when": "editorTextFocus"
+    }    
 ]' > "$KEYBINDINGS_FILE"
 
 
