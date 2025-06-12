@@ -78,6 +78,10 @@ echo '[
         "command": "editor.action.duplicateSelection"
     },
     {
+        "key": "ctrl+shift+c",
+        "command": "editor.action.commentLine"
+    },
+    {
         "key": "ctrl+d",
         "command": "editor.action.deleteLines",
         "when": "editorTextFocus"
