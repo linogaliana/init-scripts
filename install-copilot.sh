@@ -15,6 +15,7 @@ code-server --install-extension tonybaloney.vscode-pets
 # Replace default flake8 linter with project-preconfigured ruff
 code-server --uninstall-extension ms-python.flake8
 code-server --install-extension charliermarsh.ruff
+code-server --install-extension astral-sh.ty
 code-server --install-extension continue.continue
 
 # Continue extension
