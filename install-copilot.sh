@@ -11,6 +11,8 @@ code-server --install-extension adpyke.codesnap
 code-server --install-extension github.vscode-github-actions
 code-server --install-extension sumneko.lua
 code-server --install-extension tonybaloney.vscode-pets
+code-server --install-extension chuckjonas.duckdb
+
 
 # Replace default flake8 linter with project-preconfigured ruff
 code-server --uninstall-extension ms-python.flake8
