@@ -20,23 +20,9 @@ code-server --install-extension charliermarsh.ruff
 code-server --install-extension astral-sh.ty
 code-server --install-extension continue.continue
 
-# Continue extension
-# code-server --install-extension continue.continue
+# CLAUDE CODE ------------------------------------------------
 
-# COPILOT ------------------------------------------------
-
-copilotVersion="1.270.0"
-copilotChatVersion="0.23.0"
-
-wget --retry-on-http-error=429 https://marketplace.visualstudio.com/_apis/public/gallery/publishers/GitHub/vsextensions/copilot/${copilotVersion}/vspackage -O copilot.vsix.gz
-wget --retry-on-http-error=429 https://marketplace.visualstudio.com/_apis/public/gallery/publishers/GitHub/vsextensions/copilot-chat/${copilotChatVersion}/vspackage -O copilot-chat.vsix.gz
-
-gzip -d copilot.vsix.gz 
-gzip -d copilot-chat.vsix.gz 
-
-code-server --install-extension copilot.vsix
-code-server --install-extension copilot-chat.vsix
-rm copilot.vsix copilot-chat.vsix
+code-server --install-extension anthropic.claude-code
 
 
 # STARSHIP COMMAND LINE ------------------------------------------
